@@ -17,24 +17,22 @@ damn_text = load_texture('/home/umidevop/Downloads/img2.png')
 dmn_text = load_texture('/home/umidevop/Downloads/download.jpeg')
 damn = Entity(
     model = 'cube',
-    color = color.red,
+    color = color.green,
     scale = (2),
     collider = 'box',
     position = (0),
-    texture = damn_text
+    texture = 'grass'
 )
 
 
 dmn = Entity(
     model = 'cube',
-    color = color.blue,
+    color = color.brown,
     scale = (2,2),
     collider = 'box',
     position = (1),
     texture = 'brick',
-    y=1,
-    x=3, 
-    shader=lit_with_shadows_shader
+    # shader=lit_with_shadows_shader
 )
 def update():
     damn.x += held_keys['right arrow'] * time.dt * 7

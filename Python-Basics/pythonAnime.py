@@ -4,10 +4,17 @@ def anime():
     distance = 20
     while True:
         print("\n" * distance)
+        print('                    ')
+        print('                    ')
+        print('                    ')
         print("          /\        ")
         print("          ||        ")
         print("          ||        ")
         print("         /||\        ")
+        print('                    ')
+        print('                    ')
+        print('                    ')
+        
 
 time.sleep(0.2)
 os.system('clear')

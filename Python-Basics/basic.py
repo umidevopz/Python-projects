@@ -1,6 +1,7 @@
 #Import and initialize the pygame library
-
-import  pygame
+import pygame
+import pymunk
+import pymunk.pygame_util
 
 pygame.init()
 
@@ -11,6 +12,10 @@ pygame.display.set_caption("My first pygame project")
 
 screen.fill("black")
 
+# Set up space here
+
+space = pymunk.Space()
+space.gravity = (0, 500)
 #colors
  
 White = (255, 255, 255)
